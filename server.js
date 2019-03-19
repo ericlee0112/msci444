@@ -18,7 +18,7 @@ mongoose
     useCreateIndex: true
   }) // Adding new mongo url parser
   .then(() => console.log('MongoDB Connected...'))
-  .catch(err => console.log(err));
+  .catch(err => console.log("Error with Mongo Connection " + err));
 
 // Use Routes
 app.use('/api/items', require('./routes/api/items'));

@@ -1,4 +1,4 @@
 {
-  "mongoURI": "PUT_YOUR_MONGO_URI",
-  "jwtSecret": "sl_myJwtSecret"
+  "jwtSecret": "sl_myJwtSecret",
+  "mongoURI": "mongodb://eric:abc123@ds125872.mlab.com:25872/mern_learning"
 }
