@@ -1,6 +1,6 @@
-# MERN Shopping List
+# MSCI 444
 
-> Shopping list app built with the MERN stack along with Redux for state management, Reactstrap and react-transition-group.
+> MSCI 444 final project 
 
 ## Quick Start
 
@@ -8,10 +8,12 @@ Add your MONGO_URI to the default.json file. Make sure you set an env var for th
 
 ```bash
 # Install dependencies for server
+#cd into project
 npm install
 
-# Install dependencies for client
-npm run client-install
+# Install client dependencies
+cd client
+npm install
 
 # Run the client & server with concurrently
 npm run dev
@@ -25,20 +27,6 @@ npm run client
 # Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
 
-## Deployment
-
-There is a Heroku post build script so that you do not have to compile your React frontend manually, it is done on the server. Simply push to Heroku and it will build and load the client index.html page
-
-## App Info
-
-### Author
-
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
-
-### Version
-
-1.0.0
 
 ### License
 

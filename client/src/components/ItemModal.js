@@ -51,6 +51,7 @@ class ItemModal extends Component {
     return (
       <div>
         {this.props.isAuthenticated ? (
+          <div>
           <Button
             color='dark'
             style={{ marginBottom: '2rem' }}
@@ -58,6 +59,14 @@ class ItemModal extends Component {
           >
             Add Item
           </Button>
+          <Button
+            color='dark'
+            style={{ marginBottom: '2rem'}}
+            onClick={this.toggle}
+          >
+            Create Event
+          </Button>
+          </div>
         ) : (
           <h4 className='mb-3 ml-4'>Please log in to manage items</h4>
         )}

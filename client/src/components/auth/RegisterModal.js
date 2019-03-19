@@ -22,6 +22,8 @@ class RegisterModal extends Component {
     name: '',
     email: '',
     password: '',
+    skills: [],
+    learns: [],
     msg: null
   };
 
@@ -68,11 +70,29 @@ class RegisterModal extends Component {
 
     const { name, email, password } = this.state;
 
+    
+
+    const skills = [
+      this.state.skill_1, 
+      this.state.skill_2,
+      this.state.skill_3,
+      this.state.skill_4,
+      this.state.skill_5];
+  
+    const learns = [
+      this.state.learn_1,
+      this.state.learn_2,
+      this.state.learn_3,
+      this.state.learn_4,
+      this.state.learn_5];
+
     // Create user object
     const newUser = {
       name,
       email,
-      password
+      password,
+      skills: skills,
+      learns: learns
     };
 
     // Attempt to register
@@ -113,6 +133,40 @@ class RegisterModal extends Component {
                   className='mb-3'
                   onChange={this.onChange}
                 />
+
+                <Label for='department'>Department</Label>
+                <Input 
+                type='department'
+                name='department'
+                id='department'
+                placeholder='department'
+                className='mb-3'
+                onChange={this.onChange}
+                />
+
+                <Label for='position'>Position</Label>
+                <Input
+                  type='position'
+                  name='position'
+                  id='position'
+                  placeholder='Position'
+                  className='mb-3'
+                  onChange={this.onChange}
+                />
+
+                <Label for='skills'>Skills you are you good at</Label>
+                <Input type="text" name="skill_1" onChange={this.onChange}/><br/>
+                <Input type="text" name="skill_2" onChange={this.onChange}/><br/>
+                <Input type="text" name="skill_3" onChange={this.onChange}/><br/>
+                <Input type="text" name="skill_4" onChange={this.onChange}/><br/>
+                <Input type="text" name="skill_5" onChange={this.onChange}/>
+
+                <Label for='learn'>Skills you want to learn</Label>
+                <Input type="text" name="learn_1" onChange={this.onChange}/><br/>
+                <Input type="text" name="learn_2" onChange={this.onChange}/><br/>
+                <Input type="text" name="learn_3" onChange={this.onChange}/><br/>
+                <Input type="text" name="learn_4" onChange={this.onChange}/><br/>
+                <Input type="text" name="learn_5" onChange={this.onChange}/>
 
                 <Label for='password'>Password</Label>
                 <Input
